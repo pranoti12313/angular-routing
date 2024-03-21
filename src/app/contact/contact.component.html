@@ -1,0 +1,19 @@
+<p>contact works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <ul class="list-group">
+                <!-- <li class="list-group-item" *ngFor="let fac of facultyList"
+                [routerLink]="['/' + fac.fullName, fac.contactNumber]">
+                {{fac.fullName}}
+                </li> -->
+                <li class="list-group-item" *ngFor="let fac of facultyList" (click)="navigateToFaculty(fac)">
+                    {{fac.fullName}}
+                </li> 
+            </ul>
+        </div>
+        <div class="col-6">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

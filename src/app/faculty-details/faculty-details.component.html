@@ -1,0 +1,13 @@
+<p>faculty-details works!</p>
+<h2>{{facObj.facName}}</h2>
+<p>facEmail</p>
+<p>{{facObj.facContact}}</p>
+
+<!-- <button class="btn btn-primary btn-danger" [routerLink]="['/manoj' , '9558226542']"
+[queryParams]="{
+    myKey : 'valueOne',
+   mySecondKey : 'valueTwo'
+}"
+Fragment = "friday"
+>Go To Manoj</button> -->
+ <button class="btn btn-primary btn-danger" (click)="goToManoj()" >Go To Manoj</button>
